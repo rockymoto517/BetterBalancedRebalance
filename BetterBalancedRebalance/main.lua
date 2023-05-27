@@ -28,8 +28,8 @@ if not BetterRebalanceTable then
     end
     BetterRebalanceTable:init()
 end
--- Regex magic to load lua scripts via Hoppip
--- TODO: ask him for permission xd
+-- Regex magic to load lua scripts
+-- Thanks hoppip
 if RequiredScript and not BetterRebalanceTable.loaded_scripts[Requiredscript] then
     local script_name = BetterRebalanceTable.mod_path ..
                         RequiredScript:gsub(".+/(.+)", "Hooks/%1.lua")
