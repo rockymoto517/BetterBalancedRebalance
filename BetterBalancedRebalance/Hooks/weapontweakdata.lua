@@ -290,6 +290,7 @@ function(self)
 	self.x_sko12.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.x_judge.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.saiga.rays = 12
+	self.x_judge.rays = 6
     self.aa12.rays = 12
     self.benelli.rays = 12
     self.sko12.rays = 12
