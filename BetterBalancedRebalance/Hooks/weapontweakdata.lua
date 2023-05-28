@@ -323,7 +323,7 @@ function(self)
 	self.contraband.AMMO_PICKUP = { 6, 10 }
 	self.contraband.stats.concealment = 1
 	self.contraband_m203.AMMO_MAX = 3
-	self.contraband_m203.AMMO_PICKUP = { 0.15, 0.25 }
+	self.contraband_m203.AMMO_PICKUP = { 0.15, 0.2 }
     -- keknov
 	self.groza.stats.damage = 80
 	self.groza.stats.recoil = 5
@@ -334,8 +334,8 @@ function(self)
 	self.groza.AMMO_PICKUP = { 8, 11 }
 	self.groza.stats.concealment = 1
 	self.groza_underbarrel.AMMO_MAX = 3
-	self.groza_underbarrel.AMMO_PICKUP = { 0.15, 0.25 }
-	self.groza.stats.reload = 8
+	self.groza_underbarrel.AMMO_PICKUP = { 0.15, 0.2 }
+	self.groza.stats.reload = 7
     -- Movement speed changes
     self.sko12.movement_speed = 0.8
     self.aa12.movement_speed = 0.8
