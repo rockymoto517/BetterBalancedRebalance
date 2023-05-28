@@ -1,8 +1,8 @@
 {
     "name" : "Better Balanced Rebalance",
     "author" : "Rocky and Bay1k",
-	"description" : "An attempt at fixing vanilla game's player side balance problems"
-	"image" : "modlogo.png"
+	"description" : "An attempt at fixing vanilla game's player side balance problems",
+	"image" : "modlogo.png",
     "priority" : 1,
     "version" : "1.21",
     "hooks" : [
