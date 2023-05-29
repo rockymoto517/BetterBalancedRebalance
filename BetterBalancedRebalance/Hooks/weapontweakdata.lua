@@ -184,9 +184,10 @@ function(self)
 	self.holt.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.model3.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.model3.AMMO_PICKUP = { 2, 3.5 }
-	self.m1911.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
-	self.m1911.stats.concealment = 32
-	self.m1911.stats.damage = 95
+	self.model3.AMMO_MAX = 60
+	self.m1911.stats.concealment = 30
+	self.m1911.stats.damage = 80
+	self.m1911.AMMO_PICKUP = { 1, 1.4 }
 	self.type54.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.rsh12.AMMO_MAX = 30
 	self.rsh12.stats.damage = 130

@@ -29,6 +29,8 @@ function(self)
 	self.parts.wpn_fps_upg_a_slug.stats.spread = 4
 	self.parts.wpn_fps_lmg_kacchainsaw_flamethrower.stats.spread = 0
 	self.parts.wpn_fps_lmg_kacchainsaw_flamethrower.stats.recoil = 0
+	self.parts.wpn_fps_pis_m1911_sl_match.stats.spread = -2
+	self.parts.wpn_fps_pis_m1911_sl_match.stats.concealment = 2
 	self.parts.wpn_fps_ass_groza_m_speed.stats.reload = 2
 	self.parts.wpn_fps_upg_ak_g_pgrip.stats.spread = 2
 	self.parts.wpn_fps_upg_ak_g_pgrip.stats.recoil = 2
