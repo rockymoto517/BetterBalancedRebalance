@@ -381,4 +381,6 @@ function(self)
     self.specialization_descs[22][5].multiperk3 = "20%"
     self.specialization_descs[22][7].multiperk = "40%"
     self.specialization_descs[22][9].multiperk = "10%"
+    -- Skills
+    self.skill_descs.trigger_happy.multipro = "4"
 end)
