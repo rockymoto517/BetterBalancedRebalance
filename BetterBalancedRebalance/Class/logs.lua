@@ -17,3 +17,6 @@ end
 function BetterRebalanceTable:log_error(msg)
     log("[ERROR] "..msg)
 end
+function BetterRebalanceTable:log_chat(msg)
+    managers.chat:_receive_message(managers.chat.GAME, "DEBUG", msg, Color.red)
+end

@@ -1,0 +1,7 @@
+<table>
+	<!--File Path-->
+	<AddFiles directory="Assets">
+		<unit path="wpn_third_ray_fired_rocket_local"/>
+        <unit path="wpn_third_rpg7_fired_rocket_local"/>
+	</AddFiles>
+</table>
