@@ -367,5 +367,4 @@ function(self)
 	self.ray.stats_modifiers = { damage = 10 }
     self.ray.upgrade_blocks = nil
     self.ray.AMMO_PICKUP = { 0.15, 0.2 }
-	self.ray.projectile_type = "launcher_frag_slap"
 end)
