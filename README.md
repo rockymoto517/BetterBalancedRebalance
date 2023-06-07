@@ -10,6 +10,12 @@ All we ever did is to just try to polish up and fix issues caused by years of in
 
 Most of the features works on client side, there is no seperate savefile or matchmaking key. We wanted the mod to be as uninvasive as possible while solving some of the major issues.
 
+----
+
+- [Perk Deck Changes](#perk-deck-changes)
+- [Weapon Changes](#weapon-changes)
+- [Plans/FAQ](#ongoing-plans-and-disclosed-changes-section)
+
 -----
 # Perk Deck Changes
 Perk decks suffer from neglect and poor balancing. Aside from buffing muscle and introducing two new perk decks that have their own issues, Starbreeze did nothing with their sandbox. Here is a list of issues we were able to spot when it comes to perk deck sandbox:
