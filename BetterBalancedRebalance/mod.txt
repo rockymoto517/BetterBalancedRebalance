@@ -4,7 +4,7 @@
 	"description" : "An attempt at fixing vanilla game's player side balance problems",
 	"image" : "modlogo.png",
     "priority" : 1,
-    "version" : "1.3",
+    "version" : "1.4",
     "hooks" : [
         { "hook_id" : "lib/tweak_data/skilltreetweakdata",              "script_path" : "main.lua" },
         { "hook_id" : "lib/tweak_data/upgradestweakdata",               "script_path" : "main.lua" },
@@ -24,7 +24,8 @@
         { "hook_id" : "lib/tweak_data/tweakdata",                       "script_path" : "main.lua" },
         { "hook_id" : "lib/units/weapons/projectileweaponbase",         "script_path" : "main.lua" },
         { "hook_id" : "lib/units/weapons/projectiles/projectilebase",   "script_path" : "main.lua" },
-        { "hook_id" : "lib/tweak_data/blackmarket/projectilestweakdata","script_path" : "main.lua" }
+        { "hook_id" : "lib/tweak_data/blackmarket/projectilestweakdata","script_path" : "main.lua" },
+        { "hook_id" : "lib/tweak_data/enveffecttweakdata",              "script_path" : "main.lua" }
     ],
     "updates" : [
 		{
