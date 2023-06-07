@@ -1,3 +1,7 @@
+<p align="center">
+	<img src = "https://cdn.discordapp.com/attachments/879810632336179291/1107990954369101904/modlogo.png" alt = "mod logo">
+</p>
+	
 # An honest to God attempt at fixing player-side balance and design issues
 
 There are no lightweight single folder mods that attacks the base game issues while keeping the game true to vanilla. It doesn't help that most people don't even understand what the issues are. The way we attacked the issues are simple; we excluded enemy side and kept that one element as is. There are more reasons for behind this decision. The short answer is; we are just two people and making meaninful changes would take years, changes made to enemy side would require a matchmaking key since everything about the enemy side design and balance needs to be change, it is redundant when resmod, strealined heisting and eclipse exists, and lastly enemy side is 80% of the vanilla game's feel, change that and the game will change alongside it.
