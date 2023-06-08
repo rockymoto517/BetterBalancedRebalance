@@ -6,11 +6,11 @@
 	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/actions">
 		<img src = "https://img.shields.io/github/actions/workflow/status/rockymoto517/BetterBalancedRebalance/release.yml?branch=main"> </a>
 	<img src = "https://img.shields.io/github/repo-size/rockymoto517/BetterBalancedRebalance">
-	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases/tag/Release">
+	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases">
 		<img src = "https://img.shields.io/github/downloads/rockymoto517/BetterBalancedRebalance/total"> </a>
 	<a href="https://raw.githubusercontent.com/rockymoto517/BetterBalancedRebalance/main/LICENSE">
 		<img src = "https://img.shields.io/github/license/rockymoto517/BetterBalancedRebalance"> </a>
-	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases/tag/Release">
+	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases/latest">
 		<img src = "https://img.shields.io/github/v/release/rockymoto517/BetterBalancedRebalance"> </a>
 </p>
 
