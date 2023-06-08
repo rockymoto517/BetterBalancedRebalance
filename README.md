@@ -2,11 +2,17 @@
 	<img src = "https://cdn.discordapp.com/attachments/879810632336179291/1107990954369101904/modlogo.png" alt = "mod logo">
 </p>
 
-![](https://img.shields.io/github/actions/workflow/status/rockymoto517/BetterBalancedRebalance/release.yml?branch=main)
-![](https://img.shields.io/github/repo-size/rockymoto517/BetterBalancedRebalance)
-![](https://img.shields.io/github/downloads/rockymoto517/BetterBalancedRebalance/total)
-![](https://img.shields.io/github/license/rockymoto517/BetterBalancedRebalance)
-![](https://img.shields.io/github/v/release/rockymoto517/BetterBalancedRebalance)
+<p align="center">
+	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/actions">
+		<img src = "https://img.shields.io/github/actions/workflow/status/rockymoto517/BetterBalancedRebalance/release.yml?branch=main"> </a>
+	<img src = "https://img.shields.io/github/repo-size/rockymoto517/BetterBalancedRebalance">
+	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases/tag/Release">
+		<img src = "https://img.shields.io/github/downloads/rockymoto517/BetterBalancedRebalance/total"> </a>
+	<a href="https://raw.githubusercontent.com/rockymoto517/BetterBalancedRebalance/main/LICENSE">
+		<img src = "https://img.shields.io/github/license/rockymoto517/BetterBalancedRebalance"> </a>
+	<a href="https://github.com/rockymoto517/BetterBalancedRebalance/releases/tag/Release">
+		<img src = "https://img.shields.io/github/v/release/rockymoto517/BetterBalancedRebalance"> </a>
+</p>
 
 # An honest to God attempt at fixing player-side balance and design issues
 
