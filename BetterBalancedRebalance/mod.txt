@@ -30,7 +30,7 @@
     "updates" : [
 		{
 			"identifier" : "BetterBalancedRebalance_ident",
-			"host" : { "meta" : "https://github.com/rockymoto517/BetterBalancedRebalance/releases/download/Release/meta.json" }
+			"host" : { "meta" : "https://github.com/rockymoto517/BetterBalancedRebalance/releases/latest/download/meta.json" }
 		}
 	]
 }

@@ -9,25 +9,24 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
-    - name: Delete Existing Release
-      uses: actions/github-script@v4
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          const { owner, repo } = context.repo
-          const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
-          await github.repos.deleteRelease({ owner, repo, release_id: id })
     - name: Archive Mod
       run: |
          .\.github\7za.exe -tzip a ".\BetterBalancedRebalance.zip" ".\BetterBalancedRebalance"
       shell: powershell
+    - name: Get Version
+      uses: mathiasvr/command-output@v2.0.0
+      id: version
+      with:
+        run: |
+          .\.github\getversion.exe .\BetterBalancedRebalance\mod.txt
+        shell: powershell
     - name: Create New Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: Release
+        tag_name: ${{ steps.version.outputs.stdout }}
         release_name: Better Balanced Rebalance Release
         draft: false
         prerelease: false
