@@ -80,11 +80,6 @@ function(self)
 	self.parts.wpn_fps_upg_o_rx30.stats.concealment = 0
 	self.parts.wpn_fps_upg_o_rx30.stats.recoil = -1
     -- akron stuff
-	self.parts.wpn_fps_lmg_hcar_barrel_dmr.stats.spread = 0
-	self.parts.wpn_fps_lmg_hcar_barrel_dmr.stats.recoil = 0
-	self.parts.wpn_fps_lmg_hcar_barrel_dmr.stats.extra_ammo = 0
-	self.parts.wpn_fps_lmg_hcar_barrel_dmr.stats.total_ammo_mod = 0
-	self.parts.wpn_fps_lmg_hcar_barrel_dmr.stats.damage = 0
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.total_ammo_mod = 0
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.damage = -60
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.spread = 7
@@ -92,6 +87,33 @@ function(self)
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.concealment = 8
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul = 1.2
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul = 1.3
+	-- akron dmr stuff
+		self.parts.wpn_fps_lmg_hcar_barrel_dmr = {
+		texture_bundle_folder = "pxp3",
+		dlc = "pxp3",
+		type = "barrel",
+		name_id = "bm_wp_hcar_barrel_dmr",
+		unit = "units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/wpn_fps_lmg_hcar_brl_dmr",
+		a_obj = "a_b",
+		pcs = {
+			10,
+			20,
+			30,
+			40
+		},
+		stats = {
+			extra_ammo = -5,
+			total_ammo_mod = -10,
+			damage = 40,
+			value = 3
+		},
+		custom_stats = {
+			ammo_pickup_max_mul = 0.5,
+			ammo_pickup_min_mul = 0.2,
+			damage_near_mul = 10,
+			damage_far_mul = 1
+		}
+	}
     -- bootleg
 	self.parts.wpn_fps_ass_tecci_b_long.stats.concealment = -7
 	self.parts.wpn_fps_ass_tecci_b_long.stats.spread = 4
