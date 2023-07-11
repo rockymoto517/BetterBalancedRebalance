@@ -295,7 +295,7 @@ function(self)
     self.aa12.rays = 12
     self.benelli.rays = 12
     self.sko12.rays = 12
-	self.x_sko12.ray = 6
+	self.x_sko12.rays = 6
     self.spas12.rays = 12
     self.ksg.rays = 12
     self.r870.rays = 12
@@ -314,7 +314,7 @@ function(self)
     self.serbu.rays = 10
     self.striker.rays = 10
     self.ultima.rays = 10
-	self.supernova.ray = 12
+	self.supernova.rays = 12
     -- little friend
 	self.contraband.stats.damage = 120
 	self.contraband.stats.recoil = 5
