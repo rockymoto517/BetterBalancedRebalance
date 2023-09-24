@@ -1,8 +1,16 @@
+function NewRaycastWeaponBase:__check_weapon_category(category)
+    for _,type in ipairs(self:weapon_tweak_data().categories) do
+        if type == category then
+            return true
+        end
+    end
+    return false
+end
 BetterRebalanceTable:PostHook(NewRaycastWeaponBase, "_update_stats_values",
 function(self)
     -- Make trigger happy give pistols shield piercing
     if managers.player:has_category_upgrade("pistol", "pierce_enemy_armor") then
-        if self:weapon_tweak_data().categories[1] == "pistol" and not self._can_shoot_through_enemy 
+        if self:__check_weapon_category("pistol") and not self._can_shoot_through_enemy 
             and self._armor_piercing_chance ~= 1
         then
             self._can_shoot_through_enemy = true
