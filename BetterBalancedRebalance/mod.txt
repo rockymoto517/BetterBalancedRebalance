@@ -4,7 +4,7 @@
 	"description" : "An attempt at fixing vanilla game's player side balance problems",
 	"image" : "modlogo.png",
     "priority" : 1,
-    "version" : "1.7",
+    "version" : "1.8",
     "hooks" : [
         { "hook_id" : "lib/tweak_data/skilltreetweakdata",              "script_path" : "main.lua" },
         { "hook_id" : "lib/tweak_data/upgradestweakdata",               "script_path" : "main.lua" },
