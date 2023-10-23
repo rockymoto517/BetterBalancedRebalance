@@ -108,8 +108,8 @@ function(self)
 			value = 3
 		},
 		custom_stats = {
-			ammo_pickup_max_mul = 0.5,
-			ammo_pickup_min_mul = 0.2,
+			ammo_pickup_max_mul = 0.3,
+			ammo_pickup_min_mul = 0.3,
 			damage_near_mul = 10,
 			damage_far_mul = 1
 		}
