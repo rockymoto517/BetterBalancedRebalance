@@ -1,34 +1,34 @@
 require("lib/tweak_data/WeaponFactoryTweakData")
 require("lib/tweak_data/WeaponFalloffTweakData")
-BetterRebalanceTable:PostHook( WeaponTweakData, "init", 
-function(self)
-    -- load falloff template stuff hopefully
-    local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
-    -- sniper stuff
+BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
+	-- load falloff template stuff hopefully
+	local FALLOFF_TEMPLATE =
+		WeaponFalloffTemplate.setup_weapon_falloff_templates()
+	-- sniper stuff
 	self.tti.damage_falloff = FALLOFF_TEMPLATE.SNIPER_BBR_LOW
 	self.siltstone.damage_falloff = FALLOFF_TEMPLATE.SNIPER_BBR_LOW
 	self.msr.damage_falloff = FALLOFF_TEMPLATE.SNIPER_BBR_LOW
 	self.r700.damage_falloff = FALLOFF_TEMPLATE.SNIPER_BBR_LOW
-    -- sniper recoil for two
+	-- sniper recoil for two
 	self.tti.kick.standing = {
 		5,
 		3,
 		-0.6,
-		0.6
+		0.6,
 	}
 	self.siltstone.kick.standing = {
 		4.5,
 		2.5,
 		-0.6,
-		0.6
+		0.6,
 	}
-    -- leben dfox and kang ammo concealment
+	-- leben dfox and kang ammo concealment
 	self.wa2000.AMMO_MAX = 45
 	self.wa2000.stats.concealment = 1
 	self.qbu88.AMMO_MAX = 60
 	self.qbu88.stats.concealment = 1
 	self.desertfox.AMMO_MAX = 25
-    -- rifle stuff
+	-- rifle stuff
 	self.shak12.stats.damage = 125
 	self.shak12.stats.recoil = 10
 	self.shak12.stats.spread = 14
@@ -37,9 +37,9 @@ function(self)
 	self.akm_gold.stats.recoil = 4
 	self.akm_gold.stats.spread = 12
 	self.akm.stats.concealment = 15
-    -- concealment penalty for two of the best rifles, still concealable with a 29 dr smg so i don't think it should be a big deal
-	self.flint.stats.concealment  = 6
-	self.vhs.stats.concealment = 7	
+	-- concealment penalty for two of the best rifles, still concealable with a 29 dr smg so i don't think it should be a big deal
+	self.flint.stats.concealment = 6
+	self.vhs.stats.concealment = 7
 	self.scar.AMMO_MAX = 120
 	self.tkb.stats.damage = 53
 	self.tkb.fire_mode_data.volley = {
@@ -51,9 +51,9 @@ function(self)
 		can_shoot_through_shield = true,
 		can_shoot_through_enemy = true,
 		muzzleflash = "effects/payday2/particles/weapons/tkb_muzzle",
-		muzzleflash_silenced = "effects/payday2/particles/weapons/tkb_suppressed"
-	}	
-    -- akimbo smg nerfs
+		muzzleflash_silenced = "effects/payday2/particles/weapons/tkb_suppressed",
+	}
+	-- akimbo smg nerfs
 	self.x_mp5.damage_falloff = FALLOFF_TEMPLATE.AKI_SMG_BBR_HIGH
 	self.x_mp5.AMMO_MAX = 180
 	self.x_sr2.damage_falloff = FALLOFF_TEMPLATE.AKI_SMG_BBR_LOW
@@ -102,7 +102,7 @@ function(self)
 	self.x_vityaz.AMMO_MAX = 160
 	self.x_pm9.damage_falloff = FALLOFF_TEMPLATE.AKI_SMG_BBR_LOW
 	self.x_pm9.AMMO_MAX = 160
-    -- smg stuff
+	-- smg stuff
 	self.tec9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_HIGH
 	self.m1928.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_HIGH
 	self.mp9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_HIGH
@@ -124,7 +124,7 @@ function(self)
 	self.erma.AMMO_MAX = 120
 	self.erma.AMMO_PICKUP = { 3, 7 }
 	self.olympic.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
-	self.sterling.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW  -- i forgot this gun had dummy thicc pickup
+	self.sterling.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW -- i forgot this gun had dummy thicc pickup
 	self.mp7.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_HIGH
 	self.m45.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_HIGH
 	self.coal.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
@@ -134,7 +134,7 @@ function(self)
 	self.vityaz.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
 	self.pm9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
 	self.fmg9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
-    -- secondary pistols
+	-- secondary pistols
 	self.sparrow.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.b92fs.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.new_raging_bull.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
@@ -153,8 +153,8 @@ function(self)
 	self.colt_1911.can_shoot_through_enemy = true
 	self.colt_1911.can_shoot_through_shield = true
 	self.colt_1911.can_shoot_through_wall = true
-    self.colt_1911.has_description = true
-	self.colt_1911.armor_piercing_chance = 1 
+	self.colt_1911.has_description = true
+	self.colt_1911.armor_piercing_chance = 1
 	self.shrew.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.deagle.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.ppk.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
@@ -167,8 +167,8 @@ function(self)
 	self.breech.can_shoot_through_enemy = true
 	self.breech.can_shoot_through_shield = true
 	self.breech.can_shoot_through_wall = true
-    self.breech.has_description = true
-	self.breech.armor_piercing_chance = 1 
+	self.breech.has_description = true
+	self.breech.armor_piercing_chance = 1
 	self.breech.stats.damage = 120
 	self.peacemaker.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.peacemaker.stats.damage = 130
@@ -176,8 +176,8 @@ function(self)
 	self.peacemaker.can_shoot_through_enemy = true
 	self.peacemaker.can_shoot_through_shield = true
 	self.peacemaker.can_shoot_through_wall = true
-    self.peacemaker.has_description = true
-	self.peacemaker.armor_piercing_chance = 1 
+	self.peacemaker.has_description = true
+	self.peacemaker.armor_piercing_chance = 1
 	self.p226.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.pl14.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.legacy.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
@@ -194,7 +194,7 @@ function(self)
 	self.rsh12.stats.spread = 17
 	self.maxim9.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.korth.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
-    -- akimbo pistols
+	-- akimbo pistols
 	self.x_b92fs.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	self.x_chinchilla.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	self.x_chinchilla.stats.damage = 130
@@ -209,8 +209,8 @@ function(self)
 	self.x_1911.can_shoot_through_enemy = true
 	self.x_1911.can_shoot_through_shield = true
 	self.x_1911.can_shoot_through_wall = true
-    self.x_1911.has_description = true
-	self.x_1911.armor_piercing_chance = 1 
+	self.x_1911.has_description = true
+	self.x_1911.armor_piercing_chance = 1
 	self.x_shrew.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	self.x_deagle.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	self.x_usp.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
@@ -234,9 +234,9 @@ function(self)
 	self.x_breech.can_shoot_through_enemy = true
 	self.x_breech.can_shoot_through_shield = true
 	self.x_breech.can_shoot_through_wall = true
-    self.x_breech.has_description = true
-	self.x_breech.armor_piercing_chance = 1 
-    -- lmg stuff
+	self.x_breech.has_description = true
+	self.x_breech.armor_piercing_chance = 1
+	-- lmg stuff
 	self.m60.damage_falloff = FALLOFF_TEMPLATE.LMG_BBR_HIGH
 	self.hk51b.AMMO_MAX = 120
 	self.hk51b.kick.steelsight = self.hk51b.kick.standing
@@ -252,7 +252,7 @@ function(self)
 	self.hailstorm.damage_falloff = FALLOFF_TEMPLATE.SPECIAL_BBR_LOW
 	self.hailstorm.AMMO_MAX = 600
 	self.hailstorm.AMMO_PICKUP = { 7, 20 }
-    -- shotgun stuff
+	-- shotgun stuff
 	self.boot.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_VERYHIGH
 	self.saiga.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_LOW
 	self.saiga.AMMO_MAX = 66
@@ -292,30 +292,30 @@ function(self)
 	self.x_judge.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.saiga.rays = 12
 	self.x_judge.rays = 6
-    self.aa12.rays = 12
-    self.benelli.rays = 12
-    self.sko12.rays = 12
+	self.aa12.rays = 12
+	self.benelli.rays = 12
+	self.sko12.rays = 12
 	self.x_sko12.rays = 6
-    self.spas12.rays = 12
-    self.ksg.rays = 12
-    self.r870.rays = 12
-    self.m1897.rays = 12
-    self.m590.rays = 12
-    self.huntsman.rays = 12
-    self.b682.rays = 12
-    self.boot.rays = 12
-    self.basset.rays = 10
-    self.x_basset.rays = 6
-    self.rota.rays = 10
-    self.x_rota.rays = 6
-    self.judge.rays = 10
-    self.coach.rays = 10
-    self.m37.rays = 10
-    self.serbu.rays = 10
-    self.striker.rays = 10
-    self.ultima.rays = 10
+	self.spas12.rays = 12
+	self.ksg.rays = 12
+	self.r870.rays = 12
+	self.m1897.rays = 12
+	self.m590.rays = 12
+	self.huntsman.rays = 12
+	self.b682.rays = 12
+	self.boot.rays = 12
+	self.basset.rays = 10
+	self.x_basset.rays = 6
+	self.rota.rays = 10
+	self.x_rota.rays = 6
+	self.judge.rays = 10
+	self.coach.rays = 10
+	self.m37.rays = 10
+	self.serbu.rays = 10
+	self.striker.rays = 10
+	self.ultima.rays = 10
 	self.supernova.rays = 12
-    -- little friend
+	-- little friend
 	self.contraband.stats.damage = 120
 	self.contraband.stats.recoil = 5
 	self.contraband.stats.spread = 9
@@ -326,7 +326,7 @@ function(self)
 	self.contraband.stats.concealment = 1
 	self.contraband_m203.AMMO_MAX = 3
 	self.contraband_m203.AMMO_PICKUP = { 0.15, 0.2 }
-    -- keknov
+	-- keknov
 	self.groza.stats.damage = 80
 	self.groza.stats.recoil = 5
 	self.groza.stats.spread = 13
@@ -338,24 +338,24 @@ function(self)
 	self.groza_underbarrel.AMMO_MAX = 3
 	self.groza_underbarrel.AMMO_PICKUP = { 0.15, 0.2 }
 	self.groza.stats.reload = 7
-    -- Movement speed changes
-    self.sko12.movement_speed = 0.8
-    self.aa12.movement_speed = 0.8
-    self.m249.movement_speed = 0.8
-    self.wa2000.movement_speed = 0.8
-    self.qbu88.movement_speed = 0.8
-    self.ray.movement_speed = 0.8
-    self.rpg7.movement_speed = 0.8
-    self.sko12.has_description = true
-    self.aa12.has_description = true
-    self.m249.has_description = true
-    self.wa2000.has_description = true
-    self.qbu88.has_description = true
-    self.ray.has_description = true
-    self.rpg7.has_description = true
-    -- Rocket Launchers
-    self.rpg7.stats.damage = 120
-    self.rpg7.stats_modifiers = { damage = 100 }
+	-- Movement speed changes
+	self.sko12.movement_speed = 0.8
+	self.aa12.movement_speed = 0.8
+	self.m249.movement_speed = 0.8
+	self.wa2000.movement_speed = 0.8
+	self.qbu88.movement_speed = 0.8
+	self.ray.movement_speed = 0.8
+	self.rpg7.movement_speed = 0.8
+	self.sko12.has_description = true
+	self.aa12.has_description = true
+	self.m249.has_description = true
+	self.wa2000.has_description = true
+	self.qbu88.has_description = true
+	self.ray.has_description = true
+	self.rpg7.has_description = true
+	-- Rocket Launchers
+	self.rpg7.stats.damage = 120
+	self.rpg7.stats_modifiers = { damage = 100 }
 	self.ray.stats.damage = 130
 	self.ray.stats.alert_size = 7
 	self.ray.stats.spread = 22
@@ -365,6 +365,6 @@ function(self)
 	self.ray.stats.reload = 11
 	self.ray.stats.suppression = 2
 	self.ray.stats_modifiers = { damage = 10 }
-    self.ray.upgrade_blocks = nil
-    self.ray.AMMO_PICKUP = { 0.15, 0.2 }
+	self.ray.upgrade_blocks = nil
+	self.ray.AMMO_PICKUP = { 0.15, 0.2 }
 end)
