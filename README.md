@@ -1,5 +1,5 @@
 <p align="center">
-	<img src = "https://cdn.discordapp.com/attachments/879810632336179291/1107990954369101904/modlogo.png" alt = "mod logo">
+	<img src = "https://storage.modworkshop.net/mods/images/thumbnail_58050_1686064059_c43485e235a73a46508ecfd041769e14.webp" alt = "mod logo">
 </p>
 
 <p align="center">
