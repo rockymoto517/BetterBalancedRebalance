@@ -82,7 +82,7 @@ BetterRebalanceTable:PostHook(WeaponFactoryTweakData, "init", function(self)
 	self.parts.wpn_fps_upg_o_rx30.stats.recoil = -1
 	-- akron stuff
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.total_ammo_mod = 0
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.damage = -60
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.damage = -30
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.spread = 7
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.recoil = 5
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.concealment = 8
@@ -107,7 +107,7 @@ BetterRebalanceTable:PostHook(WeaponFactoryTweakData, "init", function(self)
 		stats = {
 			extra_ammo = -5,
 			total_ammo_mod = -10,
-			damage = 40,
+			damage = 80,
 			value = 3,
 		},
 		custom_stats = {

@@ -2,8 +2,7 @@
 local old_throw_projectile = ProjectileBase.throw_projectile
 function ProjectileBase.throw_projectile(projectile_type, ...)
 	if
-		projectile_type == "rocket_frag"
-		or projectile_type == "rocket_ray_frag"
+		projectile_type == "rocket_ray_frag"
 	then
 		return ProjectileBase.throw_projectile_rocket(projectile_type, ...)
 	else

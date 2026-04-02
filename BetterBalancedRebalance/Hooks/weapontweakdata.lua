@@ -155,6 +155,14 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.colt_1911.can_shoot_through_wall = true
 	self.colt_1911.has_description = true
 	self.colt_1911.armor_piercing_chance = 1
+	self.welrod.can_shoot_through_enemy = true
+	self.welrod.can_shoot_through_shield = true
+	self.welrod.can_shoot_through_wall = true
+	self.welrod.has_description = true
+	self.welrod.armor_piercing_chance = 1
+	self.welrod.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
+	self.welrod.stats_modifiers.damage = 3
+	self.welrod.stats.concealment = 29
 	self.shrew.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.deagle.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.ppk.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
@@ -244,6 +252,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.kacchainsaw.stats.spread = 8
 	self.kacchainsaw.stats.recoil = 5
 	self.hcar.damage_falloff = FALLOFF_TEMPLATE.LMG_FALL_MEDIUM
+	self.hcar.stats.damage = 95
 	self.hcar.stats.spread = 13
 	self.hcar.stats.recoil = 9
 	self.hcar.stats.concealment = 5
@@ -354,8 +363,6 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.ray.has_description = true
 	self.rpg7.has_description = true
 	-- Rocket Launchers
-	self.rpg7.stats.damage = 120
-	self.rpg7.stats_modifiers = { damage = 100 }
 	self.ray.stats.damage = 130
 	self.ray.stats.alert_size = 7
 	self.ray.stats.spread = 22

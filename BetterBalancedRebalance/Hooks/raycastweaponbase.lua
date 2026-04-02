@@ -1,23 +1,24 @@
+function RaycastWeaponBase:_check_weapon_category(category)
+	for _, type in ipairs(self:weapon_tweak_data().categories) do
+		if type == category then
+			return true
+		end
+	end
+	return false
+end
+
 local init_original = RaycastWeaponBase.init
 function RaycastWeaponBase:init(...)
 	init_original(self, ...)
 	-- Shock and Awe shotgun interaction restoration
-	if
-		table.contains(tweak_data.weapon[self._name_id].categories, "shotgun")
-	then
-		self.SHIELD_KNOCK_BACK_CHANCE = tweak_data.upgrades.values.player.shield_knock_bullet.chance
-			/ tweak_data.weapon[self._name_id].rays
+	if table.contains(tweak_data.weapon[self._name_id].categories, "shotgun") then
+		self.SHIELD_KNOCK_BACK_CHANCE = tweak_data.upgrades.values.player.shield_knock_bullet.chance / tweak_data.weapon[self._name_id].rays
 	end
 end
 
 local old_run_and_shoot = RaycastWeaponBase.run_and_shoot_allowed
 function RaycastWeaponBase:run_and_shoot_allowed()
-	return old_run_and_shoot(self)
-		or managers.player:has_category_upgrade(
-				"pistol",
-				"hip_run_and_shoot"
-			)
-			and self:weapon_tweak_data().categories[1] == "pistol"
+	return old_run_and_shoot(self) or managers.player:has_category_upgrade("pistol", "hip_run_and_shoot") and self:_check_weapon_category("pistol")
 end
 
 -- Variable range depending on the shotgun used
@@ -54,8 +55,7 @@ function DOTBulletBase:_dot_data_by_weapon(weapon_unit)
 	local data = old_dot_data(self, weapon_unit)
 	if data ~= nil then
 		if data.dot_trigger_max_distance then
-			data.dot_trigger_max_distance =
-				range_map[weapon_unit:base():get_name_id()]
+			data.dot_trigger_max_distance = range_map[weapon_unit:base():get_name_id()]
 		end
 	end
 

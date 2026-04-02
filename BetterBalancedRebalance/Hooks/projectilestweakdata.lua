@@ -5,7 +5,5 @@ BetterRebalanceTable:PostHook(
 	function(self)
 		self.projectiles.rocket_ray_frag.local_unit =
 			"wpn_third_ray_fired_rocket_local"
-		self.projectiles.rocket_frag.local_unit =
-			"wpn_third_rpg7_fired_rocket_local"
 	end
 )
