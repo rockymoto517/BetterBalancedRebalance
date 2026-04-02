@@ -14,37 +14,37 @@
 		<img src = "https://img.shields.io/github/v/release/rockymoto517/BetterBalancedRebalance"> </a>
 </p>
 
-# An honest to God attempt at fixing player-side balance and design issues
-
-There are no lightweight single folder mods that attacks the base game issues while keeping the game true to vanilla. It doesn't help that most people don't even understand what the issues are. The way we attacked the issues are simple; we excluded enemy side and kept that one element as is. There are more reasons for behind this decision. The short answer is; we are just two people and making meaninful changes would take years, changes made to enemy side would require a matchmaking key since everything about the enemy side design and balance needs to be change, it is redundant when resmod, strealined heisting and eclipse exists, and lastly enemy side is 80% of the vanilla game's feel, change that and the game will change alongside it.
-
------
-
-All we ever did is to just try to polish up and fix issues caused by years of incompetence. We did this by working on things Starbreeze neglegted the most. The focus of this rebalance was perk decks, weapon changes are made mostly to fix some of teh design and balance issues the guns face in todays enviroment. What the issues are listed in different sections that are relevant to the thing that changed.
-
------
-
-Most of the features works on client side, there is no seperate savefile or matchmaking key. We wanted the mod to be as uninvasive as possible while solving some of the major issues.
-
 ----
-
 - [Perk Deck Changes](#perk-deck-changes)
 - [Weapon Changes](#weapon-changes)
 - [Plans/FAQ](#ongoing-plans-and-disclosed-changes-section)
+----
+
+:::# An honest to God attempt at fixing player-side balance and design issues:::
+
+There are no lightweight single folder mods that attacks the base game issues while keeping the game true to vanilla. It doesn't help that most people don't even understand what the issues are. The way we attacked the issues are simple; we excluded enemy side and kept that one element as is. There are more reasons for behind this decision. The short answer is; we are just two people and making meaningful changes would take years, changes made to enemy side would require a matchmaking key since everything about the enemy side design and balance needs to be change, it is redundant when resmod, streamlined heisting and eclipse exists, and lastly enemy side is 80% of the vanilla game's feel, change that and the game will change alongside it.
 
 -----
-# Perk Deck Changes
-Perk decks suffer from neglect and poor balancing. Aside from buffing muscle and introducing two new perk decks that have their own issues, Starbreeze did nothing with their sandbox. Here is a list of issues we were able to spot when it comes to perk deck sandbox:
+
+All we ever did is to just try to polish up and fix issues. We did this by working on things Starbreeze neglected the most. The focus of this rebalance was perk decks, weapon changes are made mostly to fix some of the design and balance issues the guns face in todays environment. What the issues are listed in different sections that are relevant to the thing that changed.
+
+-----
+
+Most of the features works on client side, there is no separate savefile or matchmaking key. We wanted the mod to be as uninvasive as possible while solving some of the major issues.
+
+-----
+:::# Perk Deck Changes:::
+Perk decks suffer from neglect and poor balancing. Aside from buffing muscle and introducing two new perk decks that have their own issues, Starbreeze did nothing with their sandbox. Here is a list of issues we were able to spot when it comes to perk deck sandbox;
 * Perk deck categories don't make any sense and vague
 * Most of them are redundant and don't add much to the game
 * Power gap between good ones and the bad ones are comical
 * Some have issues with broken skills and functionality
 
-We wanted to adress these issues while keeping the power level of the perk decks same. As unbalanced as Payday 2 perk deck sandbox is, it still offers players a choice; Do you want to have a piss easy time or do you want the dark souls of heisting games? Making perk decks' power as close to each other would take away this form of player expression. As a result, we tried to close the gap between perk decks without changing their powers. We did this by trying to reduce their feature creep, nerfing some of the overpowered ones slightly and buffing  the weaker ones slightly with different abilities.
+We wanted to address these issues while keeping the power level of the perk decks same. As unbalanced as Payday 2 perk deck sandbox is, it still offers players a choice; Do you want to have a piss easy time or do you want the dark souls of heisting games? Making perk decks' power as close to each other would take away this form of player expression. As a result, we tried to close the gap between perk decks without changing their powers. We did this by trying to reduce their feature creep, nerfing some of the overpowered ones slightly and buffing  the weaker ones slightly with different abilities.
 
-# Here are the perk deck changes
+:::# Here are the perk deck changes:::
 
-Better perk deck categories:
+Better perk deck categories;
 
 ![](https://cdn.discordapp.com/attachments/967843418208366672/1115697746582712360/image.png)
 
@@ -90,23 +90,23 @@ Leech
 * Better teammate healing
 * 40% faster weapon speed
 
-I actually typed 1200 word essay about this for the mod page but I am removing it cause of the clutter.
+All the changes vanilla game made, attacked every aspect of the deck besides the self-revive. We made the ampule effect stronger and reverted the rest.
 
 Biker
 * Removed the bulk of the timer related effects
 * 10% extra health and armor
 * You can grant a speed boost that stacks with inspire basic to your teammates that also has the mod
 
-Biker's cards are mostly flavour text. First one is the only one that matters. It is a blank canvas that we can do whatever we want with it so we decided to turn it into a objective oriented support deck. If you need to move bags, assist the ~~chicken~~ ICTV players cross the road or prepare your hacker player for the biggest ecm push they has ever done, this will be the go-to option. Sadly the speed boost only works on people that have the mod, hence why it has extra cooldown, health and armor bonuses to aid the deck. For players without the mod, biker is a deck that just exists in this game anyways.
+note: biker is gonna get a rework at some point, i am not happy with the way it is it feels tacked on
 
 Maniac
 * Extra hysteria gain timer
 
-Maniac is an underrated deck. We did this to let you get the same value out of the deck with less time spent. This doesn't adress the common complaint about this deck, that being its inconsistent nature, but off-sync timers adding the subtracting DA is a great bit of characterization for Jimmy, who happens to be a coke-head clone of a mad scientist.
+Maniac is an underrated deck. We did this to let you get the same value out of the deck with less time spent. This doesn't address the common complaint about this deck, that being its inconsistent nature, but off-sync timers adding the subtracting DA is a great bit of characterization for Jimmy, who happens to be a coke-head clone of a mad scientist.
 
 Gambler
-* Ammo pickup to health and support system is replaced by a pool system we call "pot";
-	* Pot fills with kills and ammo pickups alike, hitting 20 will heal 20% of your health, replanish 10% of your ammo and 5% of your teammates ammo. If your teammates don't have the mod, vanilla ammo pickup to share ammo is used instead. When the pot is filled, a sound que plays.
+* Ammo pickup to health and support system is replaced by a pool system we call "pot"
+	* Pot fills with kills and ammo pickups alike, hitting 20 will heal 20% of your health, replenish 10% of your ammo and 5% of your teammates ammo. If your teammates don't have the mod, vanilla ammo pickup to share ammo is used instead. When the pot is filled, a sound que plays.
 * Panic on kills
 * Same health bonus of 40%
 
@@ -125,10 +125,6 @@ Burglar
 
 This bonus works in stealth and loud and it is meant to differentiate burglar from the crowd. Burglar has nothing going for it but this gives more options to variety players when it comes to making the most ridiculous low blow based build.
 
-Sicario
-* Cooldown starts as soon as you throw the smoke grenade
-
-This change is made cause sicario is the only perk deck with this quirk that never made sense. I tried other changes but all of them made the deck less intresting so I will keep the rest as is.
 
 Crook
 * Slightly more armor
@@ -149,7 +145,7 @@ Copycat is feature creeped and bloated. These two options alone outclass way too
 
 -----
 
-# Weapon changes
+:::# Weapon changes:::
 
 Entirely new fall-off presets to fit into the categories a bit better. I also did my best to reduce the power creep between options that is a result of balance changes and newer DLCs.
 
@@ -240,7 +236,8 @@ Rifles don't have a design issue and some of the overpowered ones are adjusted t
 
 * Akron is changed to be a KSP/RPK hybrid with its own unique downsides
 	* Exclusive set's ammo economy is now closer to bootleg
-	* DMR kit is cut(for now I will return to this attachment later)
+	* DMR kit no longer has damage fall-off
+		* Heavy duty dmr option with better ammo economy, at the cost of not being able to benefit from single fire skills
 
 * Hailstorm got a better fall-off preset and better ammo economy
 
@@ -278,11 +275,8 @@ Snipers have one job, that being crowd dps and I intend to keep them good in the
 	* Viper now reduces ammo pickup by 0.9
 		* It is still overpowered but my hands are tied here since projectiles are controlled by the host. Since these have to show cloud particles to other players, I can't give it a custom projectile.
 	* Tazer and Fire grenades no longer has an ammo pickup penalty
-	* Fire grenades fire ignite chance is increased to fill their role more consistently
-	* Sting got enemy penetration and 1.5 times the pickup
-		* Single target/Crowd DPS hybrid
+Note: Most of the launcher changes had to be axed because of new updates forcing sync and making things that was previously client authoritative, enforced by host.
 
-* HRL-7 now deals 24k damage with a harsher fall-off
 * Commando 101 is now a grenade launcher
 * Both rocket launchers reduce movement speed
 	* Iron man basic negates this downside
@@ -312,9 +306,8 @@ Shotguns in vanilla payday 2 have infinite range. This causes wayyyyyyyyyyyy too
 	* Dragon's breath range is reworked entirely
 		* More spammy the shotgun is, lower the dot ignite range
 			* DB ignite ranges are 10m for mag feds, 15m for tube feds, 20m for pump actions and 25m for double barrels.
-	* Tombstone no longer deals 1k dot damage per shot, it is now just a minor 2 second stun
-		* Damage and ammo penalties are removed to turn it into a combot/utility hybrid
-			* It is actually ton of fun, spammy shotguns becomes a short lived flashbang during team pushes while hard hitting ones can catch their breath, finish stunned enemies or have some time to reload. Besides, giving players a zero downside one tap weapon undermines the value of other options.
+
+Note: Tombstone changes had to be axed because of new updates forcing sync and making things that was previously client authoritative, enforced by host. It won't crash but just don't use it ig.
 
 * Pellet count streamlining
 	* 6 per each gun for akimbos
@@ -335,28 +328,19 @@ Shotguns in vanilla payday 2 have infinite range. This causes wayyyyyyyyyyyy too
 
 -----
 
-# Ongoing plans and disclosed changes section
-
-> Akron DMR KIT?
-> > It will return when i get the chance
-
->Kang arms underbarrel?
-> > Not sure what to do with it yet
+:::# Ongoing plans and disclosed changes section:::
 
 > (X) perk deck/weapon changes aren't good
-> > Tell me why, feedback is appreciated
+> >Tell me why, feedback is appreciated
 
-> Enemy side changes?
-> > Play ResMod, Streamlined Heisting or Eclipse. I don't see the value in making the overhaul number 1239074217
+>Enemy side changes?
+>> Play ResMod, Streamlined Heisting or Eclipse.
 
-> Why movement speed nerfs on some guns?
-> > To give more of a heavy weapon feel and discourage people from religiously using certain weapons all the goddam time. Balance wasn't the key concern here it was put there as a flavour and as a stick
+>Why movement speed nerfs on some guns?
+>> To give more of a heavy weapon feel and discourage people from religiously using certain weapons all the goddam time. Balance wasn't the key concern here it was put there as a flavour and as a stick
 
 > Bows and crossbows?
-> > Too invasive to the base game, due to how projectiles are handled and both of the weapon classes have different mechanics that prevets them from benefitting the same skills. My ideas for them are also a bit too out there and i rather not fiddle with them.
-
-> Leech is now useless
-> > It's not, no one forces you to use the mod anyways
+> > Thinking about giving them ricochet and have it tied to graze, will look into it when I feel like it.
 
 > Weapon locks?
 > > Considered it but it has a potential to mess with players inventories so no
@@ -364,18 +348,18 @@ Shotguns in vanilla payday 2 have infinite range. This causes wayyyyyyyyyyyy too
 > Make changes to the weapon (X)
 > > You should give me a reason why it should change and what's wrong with
 
-> Input buffer
-> > Considered it but not adding it cause there are already two mods that does it. Get those instead they are not hard to find
+>Input buffer
+>> It is in the vanilla game now
 
-> Is mods name a joke?
-> > I am the funniest person i know
+>Is mods name a joke?
+>> I am the funniest person i know
 
 
 
 -----
 
-# Credits
-> **Rockymoto** Doing the heavy lifting
+:::# Credits:::
+>**Rockymoto** Doing the heavy lifting
 **Hoppip** For making a convenient hook system
 **Cpone and Kuziz** For making A better Flamethrower Raycast
 **smfr/mrcreepy** For shotgun shock and awe raycast
@@ -383,7 +367,7 @@ Shotguns in vanilla payday 2 have infinite range. This causes wayyyyyyyyyyyy too
 **Killy** Fix for conditional reload speed fixes not applying
 
 **Speacial thanks to all of our beta testers**
-> * NotYourAvgStalin
+* NotYourAvgStalin
 * 0lafe
 * Scrungofan3.0
 * TARE104KA
