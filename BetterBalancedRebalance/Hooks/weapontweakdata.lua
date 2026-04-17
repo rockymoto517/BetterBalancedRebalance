@@ -271,6 +271,8 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.huntsman.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_VERYHIGH
 	self.spas12.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_MEDIUM
 	self.spas12.stats.reload = 14
+	self.spas12.stats.damage = 75
+	self.spas12.AMMO_MAX = 50
 	self.ksg.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_HIGH
 	self.r870.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_HIGH
 	self.r870.stats.damage = 110
