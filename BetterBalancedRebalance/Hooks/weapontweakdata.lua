@@ -28,6 +28,11 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.qbu88.AMMO_MAX = 60
 	self.qbu88.stats.concealment = 1
 	self.desertfox.AMMO_MAX = 25
+	-- Fucking Bows
+	self.elastic.AMMO_PICKUP = { 0.6, 1  }
+	self.elastic.stats.reload = 14
+	self.long.AMMO_PICKUP = { 0.6, 1  }
+	self.long.stats.reload = 16
 	-- rifle stuff
 	self.shak12.stats.damage = 125
 	self.shak12.stats.recoil = 10
