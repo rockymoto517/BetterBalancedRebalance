@@ -15,7 +15,7 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	self.specializations[13].category = "dodge" -- Ex-president
 	self.specializations[14].category = "support" -- Maniac
 	self.specializations[15].category = "armor" -- Anarchist
-	self.specializations[16].category = "support" -- Biker
+	self.specializations[16].category = "health" -- Biker
 	self.specializations[17].category = "health" -- Kingpin
 	self.specializations[18].category = "dodge" -- Sicario
 	self.specializations[19].category = "health" -- Stoic
@@ -156,19 +156,20 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	}
 	-- Biker
 	self.specializations[16][3].upgrades = {
-		"player_less_health_wild_armor_1",
-		"player_morale_boost",
+		"player_passive_health_multiplier_1",
+		"player_regain_throwable_from_ammo_1",
 	}
 	self.specializations[16][5].upgrades = {
 		"player_less_health_wild_cooldown_1",
-		"player_biker_passive_health_multiplier",
+		"player_passive_health_multiplier_2",
 	}
 	self.specializations[16][7].upgrades = {
 		"player_less_armor_wild_health_1",
-		"player_biker_passive_armor_multiplier",
+		"player_passive_health_multiplier_3",
 	}
 	self.specializations[16][9].upgrades = {
 		"player_passive_loot_drop_multiplier",
+		"player_passive_health_multiplier_4",
 		"player_less_armor_wild_cooldown_1",
 		"player_passive_wild_cooldown",
 	}

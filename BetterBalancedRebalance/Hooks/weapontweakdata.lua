@@ -152,7 +152,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.g22c.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.packrat.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.colt_1911.AMMO_MAX = 72
-	self.colt_1911.AMMO_PICKUP = { 1.2, 2.5 }
+	self.colt_1911.AMMO_PICKUP = { 0.4, 1 }
 	self.colt_1911.stats.spread = 14
 	self.colt_1911.stats.recoil = 9
 	self.colt_1911.can_shoot_through_enemy = true
@@ -207,6 +207,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.rsh12.stats.spread = 17
 	self.maxim9.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.korth.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
+	self.pmm.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	-- akimbo pistols
 	self.x_b92fs.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	self.x_chinchilla.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH

@@ -175,26 +175,26 @@ BetterRebalanceTable:PostHook(
 				upgrade = "copr_passive_swap_speed",
 				category = "weapon",
 			},
-		}
+		--}
 		-- Biker HP multiplier
-		self.definitions.player_biker_passive_health_multiplier = {
-			name_id = "menu_player_biker_passive_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "biker_passive_health_multiplier",
-				category = "player",
-			},
-		}
+		--self.definitions.player_biker_passive_health_multiplier = {
+		--	name_id = "menu_player_biker_passive_health_multiplier",
+		--	category = "feature",
+		--	upgrade = {
+		--		value = 1,
+		--		upgrade = "biker_passive_health_multiplier",
+		--		category = "player",
+		--	},
+		--}
 		-- Biker armor multiplier
-		self.definitions.player_biker_passive_armor_multiplier = {
-			name_id = "menu_player_biker_passive_armor_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "biker_passive_armor_multiplier",
-				category = "player",
-			},
+		--self.definitions.player_biker_passive_armor_multiplier = {
+		--	name_id = "menu_player_biker_passive_armor_multiplier",
+		--	category = "feature",
+		--	upgrade = {
+		--		value = 1,
+		--		upgrade = "biker_passive_armor_multiplier",
+		--		category = "player",
+		--	},
 		}
 		-- Biker cooldown upgrade
 		self.definitions.player_passive_wild_cooldown = {
