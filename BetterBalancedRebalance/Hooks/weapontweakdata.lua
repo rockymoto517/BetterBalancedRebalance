@@ -267,6 +267,9 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.hailstorm.damage_falloff = FALLOFF_TEMPLATE.SPECIAL_BBR_LOW
 	self.hailstorm.AMMO_MAX = 600
 	self.hailstorm.AMMO_PICKUP = { 7, 20 }
+	self.par.stats.recoil = 10
+	self.par.kick.standing = { -0.2, 0.8, -1, 1.4 }
+	self.par.stats.reload = 12
 	-- shotgun stuff
 	self.boot.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_VERYHIGH
 	self.saiga.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_LOW
@@ -356,18 +359,8 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.groza_underbarrel.AMMO_PICKUP = { 0.15, 0.2 }
 	self.groza.stats.reload = 7
 	-- Movement speed changes
-	self.sko12.movement_speed = 0.8
-	self.aa12.movement_speed = 0.8
-	self.m249.movement_speed = 0.8
-	self.wa2000.movement_speed = 0.8
-	self.qbu88.movement_speed = 0.8
 	self.ray.movement_speed = 0.8
 	self.rpg7.movement_speed = 0.8
-	self.sko12.has_description = true
-	self.aa12.has_description = true
-	self.m249.has_description = true
-	self.wa2000.has_description = true
-	self.qbu88.has_description = true
 	self.ray.has_description = true
 	self.rpg7.has_description = true
 	-- Rocket Launchers
