@@ -36,6 +36,8 @@ BetterRebalanceTable:PostHook(WeaponFactoryTweakData, "init", function(self)
 	self.parts.wpn_fps_upg_ak_g_pgrip.stats.concealment = -1
 	self.parts.wpn_fps_upg_a_rip.stats.damage = 0
 	self.parts.wpn_fps_upg_a_rip.stats.total_ammo_mod = 0
+	self.parts.wpn_fps_m4_uupg_b_sd.stats.spread = 2
+
 	--[[
 	self.parts.wpn_fps_upg_a_rip.custom_stats = {
         armor_piercing_add = 1,
