@@ -191,4 +191,9 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 		"pistol_pierce_enemy_armor",
 		"pistol_hip_run_and_shoot",
 	}
+	self.skills.drop_soap[1].upgrades = {
+	"player_counter_strike_melee",
+	"player_counter_strike_spooc",
+}
+	self.skills.drop_soap[2].upgrades = {"melee_stacking_hit_damage_multiplier_1"} --Counter Strike aced to socio
 end)
