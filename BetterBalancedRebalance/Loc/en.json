@@ -133,5 +133,7 @@
 	"menu_deck22_7_short" : "Increases weapon swapping speed by ##$multiperk##.",
 	"menu_deck22_9_short" : "While the Leech Ampule is active, your health is now divided into segments of ##$multiperk##.",
 	"menu_st_spec_23" : "Con Artist",
-	"menu_st_spec_23_desc" : "A Con Artist is a manipulative organism that can appear as a human. They lie, cheat and deceive their way to their own selfish goals. They are usually into scamming others, preferring tricks to get what they want.\n\nThe Con Artist is a deck that allows you to have some influence on how it functions and can be built for a variety of situations. The deck itself can mimic a card from other decks so combined with its unique effects, you get a pretty good deal out of it. Not recommended for beginners."
+	"menu_st_spec_23_desc" : "A Con Artist is a manipulative organism that can appear as a human. They lie, cheat and deceive their way to their own selfish goals. They are usually into scamming others, preferring tricks to get what they want.\n\nThe Con Artist is a deck that allows you to have some influence on how it functions and can be built for a variety of situations. The deck itself can mimic a card from other decks so combined with its unique effects, you get a pretty good deal out of it. Not recommended for beginners.",
+	"menu_drop_soap_beta" : "CQC Master",
+	"menu_drop_soap_beta_desc" : "BASIC: ##$basic;##$NL;When charging your melee weapon you will counterattack enemies that try to strike you, knocking them down. You gain the ability to counter attack cloakers and their kicks. The knockdown does not deal any damage.$NL;$NL;ACE: ##$pro;##$NL;Your second and each consecutive melee hit within ##1## second of the last one will deal ##10## times its normal damage."
 }
