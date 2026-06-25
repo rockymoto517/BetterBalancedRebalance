@@ -307,7 +307,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.ultima.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_HIGH
 	self.ultima.stats.damage = 90
 	self.x_rota.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
-	self.x_basset.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
+	self.x_basset.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_LOW
 	self.x_sko12.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.x_judge.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.saiga.rays = 12
