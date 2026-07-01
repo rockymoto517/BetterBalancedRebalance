@@ -86,7 +86,7 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	}
 	self.specializations[12][9].upgrades = {
 		"player_passive_loot_drop_multiplier",
-		"player_passive_frenzy_health_1",
+		"player_passive_always_zerk_1",
 	}
 	-- Muscle
 	self.specializations[2][3].upgrades = {
@@ -115,8 +115,8 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	-- Ex-president
 	self.specializations[13][9].upgrades = {
 		"player_passive_loot_drop_multiplier",
-		"player_killshot_close_panic_chance",
 		"player_expres_dodge_chance",
+		"player_kill_change_regenerate_speed",
 	}
 	-- Hacker
 	self.specializations[21][3].upgrades = { "player_passive_dodge_chance_1" }
@@ -192,8 +192,9 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 		"pistol_hip_run_and_shoot",
 	}
 	self.skills.drop_soap[1].upgrades = {
-	"player_counter_strike_melee",
-	"player_counter_strike_spooc",
-}
-	self.skills.drop_soap[2].upgrades = {"melee_stacking_hit_damage_multiplier_1"} --Counter Strike aced to socio
+		"player_counter_strike_melee",
+		"player_counter_strike_spooc",
+	}
+	self.skills.drop_soap[2].upgrades =
+		{ "melee_stacking_hit_damage_multiplier_1" } --Counter Strike aced to socio
 end)

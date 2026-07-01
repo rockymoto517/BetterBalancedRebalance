@@ -358,3 +358,60 @@ function PlayerManager:chk_wild_kill_counter(killed_unit, variant)
 		table.insert(self._wild_kill_triggers, insert_index + 1, trigger_time)
 	end
 end
+
+-- Make yakuza's armor regen bonus always active with card 9
+local old_body_armor_regen_mul = PlayerManager.body_armor_regen_multiplier
+function PlayerManager:body_armor_regen_multiplier(moving, health_ratio)
+	local passive_zerk =
+		managers.player:upgrade_value("player", "passive_always_zerk", false)
+	local multiplier = old_body_armor_regen_mul(
+		self,
+		moving,
+		not passive_zerk and health_ratio
+	)
+
+	if health_ratio and passive_zerk then
+		multiplier = multiplier
+			* (
+				1
+				- managers.player:upgrade_value(
+					"player",
+					"armor_regen_damage_health_ratio_multiplier",
+					0
+				)
+			)
+	end
+	return multiplier
+end
+
+-- Make yakuza's move speed bonus always active with card 9
+local old_move_speed_mul = PlayerManager.movement_speed_multiplier
+function PlayerManager:movement_speed_multiplier(
+	speed_state,
+	bonus_multiplier,
+	upgrade_level,
+	health_ratio
+)
+	local passive_zerk =
+		managers.player:upgrade_value("player", "passive_always_zerk", false)
+
+	local multiplier = old_move_speed_mul(
+		self,
+		speed_state,
+		bonus_multiplier,
+		upgrade_level,
+		not passive_zerk and health_ratio
+	)
+	if health_ratio and passive_zerk then
+		multiplier = multiplier
+			* (
+				1
+				+ managers.player:upgrade_value(
+					"player",
+					"movement_speed_damage_health_ratio_multiplier",
+					0
+				)
+			)
+	end
+	return multiplier
+end

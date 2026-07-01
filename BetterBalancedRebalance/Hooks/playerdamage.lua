@@ -22,19 +22,6 @@ BetterRebalanceTable:PostHook(PlayerDamage, "_calc_armor_damage", function(self)
 	end
 end)
 
--- Yakuza Frenzy HP stuffs
-BetterRebalanceTable:PostHook(PlayerDamage, "init", function(self)
-	local yakuza_reduction =
-		managers.player:upgrade_value_nil("player", "passive_frenzy_health")
-	if
-		managers.player:has_category_upgrade("player", "passive_frenzy_health")
-		and yakuza_reduction
-	then
-		self._max_health_reduction = yakuza_reduction --[[ Leaves approx 1 hp with/without a convert, maybe not with CC upgrades
-                                                           But it's the best option without remaking large functions tbh ]]
-	end
-end)
-
 BetterRebalanceTable:PostHook(
 	PlayerDamage,
 	"copr_update_attack_data",

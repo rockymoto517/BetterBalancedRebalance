@@ -12,13 +12,13 @@ BetterRebalanceTable:PostHook(
 				category = "player",
 			},
 		}
-		-- Yakuza frenzy hp upgrade
-		self.definitions.player_passive_frenzy_health_1 = {
-			name_id = "menu_player_passive_frenzy_health",
+		-- Yakuza speed/armor upgrades always active
+		self.definitions.player_passive_always_zerk = {
+			name_id = "menu_player_passive_always_zerk",
 			category = "feature",
 			upgrade = {
 				value = 1,
-				upgrade = "passive_frenzy_health",
+				upgrade = "passive_always_zerk",
 				category = "player",
 			},
 		}
@@ -175,26 +175,26 @@ BetterRebalanceTable:PostHook(
 				upgrade = "copr_passive_swap_speed",
 				category = "weapon",
 			},
-		--}
-		-- Biker HP multiplier
-		--self.definitions.player_biker_passive_health_multiplier = {
-		--	name_id = "menu_player_biker_passive_health_multiplier",
-		--	category = "feature",
-		--	upgrade = {
-		--		value = 1,
-		--		upgrade = "biker_passive_health_multiplier",
-		--		category = "player",
-		--	},
-		--}
-		-- Biker armor multiplier
-		--self.definitions.player_biker_passive_armor_multiplier = {
-		--	name_id = "menu_player_biker_passive_armor_multiplier",
-		--	category = "feature",
-		--	upgrade = {
-		--		value = 1,
-		--		upgrade = "biker_passive_armor_multiplier",
-		--		category = "player",
-		--	},
+			--}
+			-- Biker HP multiplier
+			--self.definitions.player_biker_passive_health_multiplier = {
+			--	name_id = "menu_player_biker_passive_health_multiplier",
+			--	category = "feature",
+			--	upgrade = {
+			--		value = 1,
+			--		upgrade = "biker_passive_health_multiplier",
+			--		category = "player",
+			--	},
+			--}
+			-- Biker armor multiplier
+			--self.definitions.player_biker_passive_armor_multiplier = {
+			--	name_id = "menu_player_biker_passive_armor_multiplier",
+			--	category = "feature",
+			--	upgrade = {
+			--		value = 1,
+			--		upgrade = "biker_passive_armor_multiplier",
+			--		category = "player",
+			--	},
 		}
 		-- Biker cooldown upgrade
 		self.definitions.player_passive_wild_cooldown = {
@@ -264,8 +264,8 @@ BetterRebalanceTable:PostHook(
 		self.values.player.hitman_kill_bulletstorm = { 5 }
 		-- Set values to hitman armor regen
 		self.values.temporary.regen_all_armor = { { 1.5, 15 } }
-		-- Yakuza hp amount
-		self.values.player.passive_frenzy_health = { 0.005 }
+		-- Yakuza zerk state
+		self.values.player.passive_always_zerk = { true }
 		-- Hitman armor steps
 		self.values.player.hitman_armor_increase = { 1, 1.1, 1.35 }
 		-- Infiltrator HP upgrades

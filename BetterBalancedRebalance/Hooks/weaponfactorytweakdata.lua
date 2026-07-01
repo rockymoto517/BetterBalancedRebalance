@@ -62,6 +62,29 @@ BetterRebalanceTable:PostHook(WeaponFactoryTweakData, "init", function(self)
 		armor_piercing_add = 1,
 		damage_far_mul = 1.2,
 	}
+	---Revert buckshot ammo changes as other shotgun ammo types in the mod has uses compared to vanilla
+		self.parts.wpn_fps_upg_a_custom = {
+		is_a_unlockable = true,
+		texture_bundle_folder = "gage_pack_shotgun",
+		a_obj = "a_body",
+		type = "ammo",
+		third_unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+		internal_part = true,
+		sub_type = "ammo_custom",
+		dlc = "gage_pack_shotgun",
+		name_id = "bm_wp_upg_a_custom",
+		unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+		pcs = {},
+		stats = {
+			value = 5,
+			damage = 15
+		},
+		custom_stats = {
+		}
+	}
+	self.parts.wpn_fps_upg_a_custom_free = deep_clone(self.parts.wpn_fps_upg_a_custom)
+	self.parts.wpn_fps_upg_a_custom_free.dlc = nil
+	self.parts.wpn_fps_upg_a_custom_free.is_a_unlockable = nil
 	-- sights
 	self.parts.wpn_fps_upg_o_eotech.stats.concealment = -1
 	self.parts.wpn_fps_upg_o_t1micro.stats.recoil = 0
@@ -84,14 +107,12 @@ BetterRebalanceTable:PostHook(WeaponFactoryTweakData, "init", function(self)
 	self.parts.wpn_fps_upg_o_rx30.stats.recoil = -1
 	-- akron stuff
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.total_ammo_mod = 0
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.damage = -30
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.damage = -25
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.spread = 7
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.recoil = 5
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.recoil = 7
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.stats.concealment = 8
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul =
-		1.2
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul =
-		1.3
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul = 1.2
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul = 1.3
 	-- akron dmr stuff
 	self.parts.wpn_fps_lmg_hcar_barrel_dmr = {
 		texture_bundle_folder = "pxp3",
