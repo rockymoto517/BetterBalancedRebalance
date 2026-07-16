@@ -453,7 +453,7 @@ Note: Tombstone changes had to be axed because of new updates forcing sync and m
 * **Nikita** For shotgun shock and awe raycast
 * **iuhggiuhhgbnr** and **Dr.Newbie** For letting me know that custom projectiles do work for clients
 * **Killy** for conditional reload speed fixes not applying
-* *5thTier** for “Only Meta Melees” mod as I just took that and added the missing stuff from new updates into it
+* **5thTier** for “Only Meta Melees” mod as I just took that and added the missing stuff from new updates into it
 
 **Speacial thanks to all of our beta testers**
 
