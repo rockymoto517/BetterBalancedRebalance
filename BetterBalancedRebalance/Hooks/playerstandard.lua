@@ -3,15 +3,10 @@ local __perkdeck_exclusion_upgrades = {
 }
 
 -- Reload bug fix
-local reload_fix_start_action_reload_enter =
-	PlayerStandard._start_action_reload_enter
+local reload_fix_start_action_reload_enter = PlayerStandard._start_action_reload_enter
 function PlayerStandard:_start_action_reload_enter(t, ...)
 	local weapon = self._equipped_unit:base()
-	if
-		weapon
-		and weapon._current_reload_speed_multiplier
-		and weapon:can_reload()
-	then
+	if weapon and weapon._current_reload_speed_multiplier and weapon:can_reload() then
 		weapon._current_reload_speed_multiplier = nil
 	end
 	reload_fix_start_action_reload_enter(self, t, ...)
@@ -20,49 +15,22 @@ end
 -- Increase gambler pool on ammo pickup
 -- Unfortunately have to override the function :/
 function PlayerStandard:_find_pickups(t)
-	local pickups = World:find_units_quick(
-		"sphere",
-		self._unit:movement():m_pos(),
-		self._pickup_area,
-		self._slotmask_pickups
-	)
-	local grenade_tweak =
-		tweak_data.blackmarket.projectiles[managers.blackmarket:equipped_grenade()]
-	local may_find_grenade = not grenade_tweak.base_cooldown
-		and managers.player:has_category_upgrade(
-			"player",
-			"regain_throwable_from_ammo"
-		)
+	local pickups = World:find_units_quick("sphere", self._unit:movement():m_pos(), self._pickup_area, self._slotmask_pickups)
+	local grenade_tweak = tweak_data.blackmarket.projectiles[managers.blackmarket:equipped_grenade()]
+	local may_find_grenade = not grenade_tweak.base_cooldown and managers.player:has_category_upgrade("player", "regain_throwable_from_ammo")
 	for _, pickup in ipairs(pickups) do
 		if pickup:pickup() and pickup:pickup():pickup(self._unit) then
 			if may_find_grenade then
-				local data = managers.player:upgrade_value(
-					"player",
-					"regain_throwable_from_ammo",
-					nil
-				)
+				local data = managers.player:upgrade_value("player", "regain_throwable_from_ammo", nil)
 				if data and not managers.player:got_max_grenades() then
-					managers.player:add_coroutine(
-						"regain_throwable_from_ammo",
-						PlayerAction.FullyLoaded,
-						managers.player,
-						data.chance,
-						data.chance_inc
-					)
+					managers.player:add_coroutine("regain_throwable_from_ammo", PlayerAction.FullyLoaded, managers.player, data.chance, data.chance_inc)
 				end
 			end
 			-- Increment gambler on ammo pickup
-			if
-				managers.player:has_category_upgrade(
-					"player",
-					"gambler_kill_to_health_buffer"
-				)
-			then
+			if managers.player:has_category_upgrade("player", "gambler_kill_to_health_buffer") then
 				managers.player:increment_gambler_pool()
 			end
-			for id, weapon in
-				pairs(self._unit:inventory():available_selections())
-			do
+			for id, weapon in pairs(self._unit:inventory():available_selections()) do
 				managers.hud:set_ammo_amount(id, weapon.unit:base():ammo_info())
 			end
 		end
@@ -73,7 +41,18 @@ end
 local old_get_swap_multi = PlayerStandard._get_swap_speed_multiplier
 function PlayerStandard:_get_swap_speed_multiplier()
 	local multiplier = old_get_swap_multi(self)
-	multiplier = multiplier
-		* managers.player:upgrade_value("weapon", "copr_passive_swap_speed", 1)
+	multiplier = multiplier * managers.player:upgrade_value("weapon", "copr_passive_swap_speed", 1)
 	return multiplier
+end
+
+-- Infiltrator DR on melee hit
+local old_do_melee_damage = PlayerStandard._do_melee_damage
+function PlayerStandard:_do_melee_damage(...)
+	local defense_data = old_do_melee_damage(self, ...)
+	-- Look into this, could be less consistant than I imagined
+	if defense_data and type(defense_data) == "table" and defense_data.attack_data then
+		if managers.player:has_category_upgrade("temporary", "melee_damage_reduction") and not managers.player:has_activate_temporary_upgrade("temporary", "melee_damage_reduction") then
+			managers.player:activate_temporary_upgrade("temporary", "melee_damage_reduction")
+		end
+	end
 end

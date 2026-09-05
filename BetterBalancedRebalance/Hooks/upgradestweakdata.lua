@@ -1,316 +1,314 @@
-BetterRebalanceTable:PostHook(
-	UpgradesTweakData,
-	"_player_definitions",
-	function(self)
-		-- Create hitman bulletstorm upgrade using the pd2 system
-		self.definitions.player_hitman_kill_bulletstorm_1 = {
-			name_id = "menu_player_hitman_kill_bulletstorm",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "hitman_kill_bulletstorm",
-				category = "player",
-			},
-		}
-		-- Yakuza speed/armor upgrades always active
-		self.definitions.player_passive_always_zerk = {
-			name_id = "menu_player_passive_always_zerk",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "passive_always_zerk",
-				category = "player",
-			},
-		}
-		-- Hitman armor steps
-		self.definitions.player_hitman_armor_increase_1 = {
-			name_id = "menu_player_hitman_health_to_armor_conversion",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "hitman_armor_increase",
-				category = "player",
-			},
-		}
-		self.definitions.player_hitman_armor_increase_2 = {
-			name_id = "menu_player_hitman_health_to_armor_conversion",
-			category = "feature",
-			upgrade = {
-				value = 2,
-				upgrade = "hitman_armor_increase",
-				category = "player",
-			},
-		}
-		self.definitions.player_hitman_armor_increase_3 = {
-			name_id = "menu_player_hitman_health_to_armor_conversion",
-			category = "feature",
-			upgrade = {
-				value = 3,
-				upgrade = "hitman_armor_increase",
-				category = "player",
-			},
-		}
-		-- Infiltrator HP upgrades
-		self.definitions.player_passive_infiltrator_health_multiplier_1 = {
-			name_id = "menu_player_passive_infiltrator_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "passive_infiltrator_health_multiplier",
-				category = "player",
-			},
-		}
-		self.definitions.player_passive_infiltrator_health_multiplier_2 = {
-			name_id = "menu_player_passive_infiltrator_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 2,
-				upgrade = "passive_infiltrator_health_multiplier",
-				category = "player",
-			},
-		}
-		self.definitions.player_passive_infiltrator_health_multiplier_3 = {
-			name_id = "menu_player_passive_infiltrator_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 3,
-				upgrade = "passive_infiltrator_health_multiplier",
-				category = "player",
-			},
-		}
-		-- Crook BV Upgrades
-		-- p.s. why did overkill do it like this bruh
-		self.definitions.player_level_2_crook_armor_addend = {
-			name_id = "menu_player_level_2_crook_armor_addend",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "level_2_crook_armor_addend",
-				category = "player",
-			},
-		}
-		self.definitions.player_level_3_crook_armor_addend = {
-			name_id = "menu_player_level_3_crook_armor_addend",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "level_3_crook_armor_addend",
-				category = "player",
-			},
-		}
-		self.definitions.player_level_4_crook_armor_addend = {
-			name_id = "menu_player_level_4_crook_armor_addend",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "level_4_crook_armor_addend",
-				category = "player",
-			},
-		}
-		-- Ex-president dodge chance
-		self.definitions.player_expres_dodge_chance = {
-			name_id = "menu_player_expres_dodge_chance",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "expres_dodge_chance",
-				category = "player",
-			},
-		}
-		-- Burglar concealment upgrade
-		self.definitions.player_passive_burglar_concealment_addend = {
-			name_id = "menu_player_passive_burglar_concealment_addend",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "passive_burglar_concealment_addend",
-				category = "player",
-			},
-		}
-		-- Gambler health pool
-		self.definitions.player_gambler_kill_to_health_buffer = {
-			name_id = "menu_player_gambler_kill_to_health_buffer",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "gambler_kill_to_health_buffer",
-				category = "player",
-			},
-		}
-		-- Gambler health pool ammo upgrades
-		self.definitions.player_gambler_kill_to_ammo_team = {
-			name_id = "menu_player_gambler_kill_to_ammo_team",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "gambler_kill_to_ammo_team",
-				category = "player",
-			},
-		}
-		-- Gambler HP upgrades
-		self.definitions.player_gambler_passive_health_multiplier_1 = {
-			name_id = "menu_player_gambler_passive_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "gambler_passive_health_multiplier",
-				category = "player",
-			},
-		}
-		self.definitions.player_gambler_passive_health_multiplier_2 = {
-			name_id = "menu_player_gambler_passive_health_multiplier",
-			category = "feature",
-			upgrade = {
-				value = 2,
-				upgrade = "gambler_passive_health_multiplier",
-				category = "player",
-			},
-		}
-		-- Leech swap speed upgrade
-		self.definitions.player_copr_passive_swap_speed = {
-			name_id = "menu_player_copr_passive_swap_speed",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "copr_passive_swap_speed",
-				category = "weapon",
-			},
-			--}
-			-- Biker HP multiplier
-			--self.definitions.player_biker_passive_health_multiplier = {
-			--	name_id = "menu_player_biker_passive_health_multiplier",
-			--	category = "feature",
-			--	upgrade = {
-			--		value = 1,
-			--		upgrade = "biker_passive_health_multiplier",
-			--		category = "player",
-			--	},
-			--}
-			-- Biker armor multiplier
-			--self.definitions.player_biker_passive_armor_multiplier = {
-			--	name_id = "menu_player_biker_passive_armor_multiplier",
-			--	category = "feature",
-			--	upgrade = {
-			--		value = 1,
-			--		upgrade = "biker_passive_armor_multiplier",
-			--		category = "player",
-			--	},
-		}
-		-- Biker cooldown upgrade
-		self.definitions.player_passive_wild_cooldown = {
-			name_id = "menu_player_passive_wild_cooldown",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "passive_wild_cooldown",
-				category = "player",
-			},
-		}
-		-- Copycat dodge nerf
-		self.definitions.player_mrwi_burglar_dodge_chance = {
-			name_id = "menu_player_mrwi_burglar_dodge_chance",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "mrwi_burglar_dodge_chance",
-				category = "player",
-			},
-		}
-		-- Trigger happy run and gun
-		self.definitions.pistol_hip_run_and_shoot = {
-			name_id = "menu_pistol_hip_run_and_shoot",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "hip_run_and_shoot",
-				category = "pistol",
-			},
-		}
-		-- Trigger happy pierece armor
-		self.definitions.pistol_pierce_enemy_armor = {
-			name_id = "menu_pistol_pierce_enemy_armor",
-			category = "feature",
-			upgrade = {
-				value = 1,
-				upgrade = "pierce_enemy_armor",
-				category = "pistol",
-			},
-		}
-	end
-)
-
-BetterRebalanceTable:PostHook(
-	UpgradesTweakData,
-	"_temporary_definitions",
-	function(self)
-		-- Hitman full armor regen upgrade
-		self.definitions.temporary_regen_all_armor_1 = {
-			name_id = "menu_temporary_regen_all_armor_1",
+BetterRebalanceTable:PostHook(UpgradesTweakData, "_player_definitions", function(self)
+	-- Create hitman bulletstorm upgrade using the pd2 system
+	self.definitions.player_hitman_kill_bulletstorm_1 = {
+		name_id = "menu_player_hitman_kill_bulletstorm",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "hitman_kill_bulletstorm",
+			category = "player",
+		},
+	}
+	-- Yakuza speed/armor upgrades always active
+	self.definitions.player_passive_always_zerk = {
+		name_id = "menu_player_passive_always_zerk",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "passive_always_zerk",
+			category = "player",
+		},
+	}
+	-- Hitman armor steps
+	self.definitions.player_hitman_armor_increase_1 = {
+		name_id = "menu_player_hitman_health_to_armor_conversion",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "hitman_armor_increase",
+			category = "player",
+		},
+	}
+	self.definitions.player_hitman_armor_increase_2 = {
+		name_id = "menu_player_hitman_health_to_armor_conversion",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "hitman_armor_increase",
+			category = "player",
+		},
+	}
+	self.definitions.player_hitman_armor_increase_3 = {
+		name_id = "menu_player_hitman_health_to_armor_conversion",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "hitman_armor_increase",
+			category = "player",
+		},
+	}
+	-- Infiltrator HP upgrades
+	self.definitions.player_passive_infiltrator_health_multiplier_1 = {
+		name_id = "menu_player_passive_infiltrator_health_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "passive_infiltrator_health_multiplier",
+			category = "player",
+		},
+	}
+	self.definitions.player_passive_infiltrator_health_multiplier_2 = {
+		name_id = "menu_player_passive_infiltrator_health_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "passive_infiltrator_health_multiplier",
+			category = "player",
+		},
+	}
+	self.definitions.player_passive_infiltrator_health_multiplier_3 = {
+		name_id = "menu_player_passive_infiltrator_health_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "passive_infiltrator_health_multiplier",
+			category = "player",
+		},
+	}
+	-- Crook BV Upgrades
+	-- p.s. why did overkill do it like this bruh
+	self.definitions.player_level_2_crook_armor_addend = {
+		name_id = "menu_player_level_2_crook_armor_addend",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "level_2_crook_armor_addend",
+			category = "player",
+		},
+	}
+	self.definitions.player_level_3_crook_armor_addend = {
+		name_id = "menu_player_level_3_crook_armor_addend",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "level_3_crook_armor_addend",
+			category = "player",
+		},
+	}
+	self.definitions.player_level_4_crook_armor_addend = {
+		name_id = "menu_player_level_4_crook_armor_addend",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "level_4_crook_armor_addend",
+			category = "player",
+		},
+	}
+	-- Ex-president dodge chance
+	self.definitions.player_expres_dodge_chance = {
+		name_id = "menu_player_expres_dodge_chance",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "expres_dodge_chance",
+			category = "player",
+		},
+	}
+	-- Burglar concealment upgrade
+	self.definitions.player_passive_burglar_concealment_addend = {
+		name_id = "menu_player_passive_burglar_concealment_addend",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "passive_burglar_concealment_addend",
+			category = "player",
+		},
+	}
+	-- Gambler health pool
+	self.definitions.player_gambler_kill_to_health_buffer = {
+		name_id = "menu_player_gambler_kill_to_health_buffer",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "gambler_kill_to_health_buffer",
+			category = "player",
+		},
+	}
+	-- Gambler health pool ammo upgrades
+	self.definitions.player_gambler_kill_to_ammo_team = {
+		name_id = "menu_player_gambler_kill_to_ammo_team",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "gambler_kill_to_ammo_team",
+			category = "player",
+		},
+	}
+	-- Gambler HP upgrades
+	self.definitions.player_gambler_passive_health_multiplier_1 = {
+		name_id = "menu_player_gambler_passive_health_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "gambler_passive_health_multiplier",
+			category = "player",
+		},
+	}
+	self.definitions.player_gambler_passive_health_multiplier_2 = {
+		name_id = "menu_player_gambler_passive_health_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "gambler_passive_health_multiplier",
+			category = "player",
+		},
+	}
+	-- Leech swap speed upgrade
+	self.definitions.player_copr_passive_swap_speed = {
+		name_id = "menu_player_copr_passive_swap_speed",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "copr_passive_swap_speed",
+			category = "weapon",
+		},
+		--}
+		-- Biker HP multiplier
+		--self.definitions.player_biker_passive_health_multiplier = {
+		--	name_id = "menu_player_biker_passive_health_multiplier",
+		--	category = "feature",
+		--	upgrade = {
+		--		value = 1,
+		--		upgrade = "biker_passive_health_multiplier",
+		--		category = "player",
+		--	},
+		--}
+		-- Biker armor multiplier
+		--self.definitions.player_biker_passive_armor_multiplier = {
+		--	name_id = "menu_player_biker_passive_armor_multiplier",
+		--	category = "feature",
+		--	upgrade = {
+		--		value = 1,
+		--		upgrade = "biker_passive_armor_multiplier",
+		--		category = "player",
+		--	},
+	}
+	-- Biker cooldown upgrade
+	self.definitions.player_passive_wild_cooldown = {
+		name_id = "menu_player_passive_wild_cooldown",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "passive_wild_cooldown",
+			category = "player",
+		},
+	}
+	-- Copycat dodge nerf
+	self.definitions.player_mrwi_burglar_dodge_chance = {
+		name_id = "menu_player_mrwi_burglar_dodge_chance",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "mrwi_burglar_dodge_chance",
+			category = "player",
+		},
+	}
+	-- Trigger happy run and gun
+	self.definitions.pistol_hip_run_and_shoot = {
+		name_id = "menu_pistol_hip_run_and_shoot",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "hip_run_and_shoot",
+			category = "pistol",
+		},
+	}
+	-- Trigger happy pierece armor
+	self.definitions.pistol_pierce_enemy_armor = {
+		name_id = "menu_pistol_pierce_enemy_armor",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "pierce_enemy_armor",
+			category = "pistol",
+		},
+	}
+	-- Infiltrator DR on melee hit
+	self.definitions.player_melee_damage_reduction = {
+		category = "temporary",
+		name_id = "menu_player_melee_damage_reduction",
+		upgrade = {
 			category = "temporary",
-			upgrade = {
-				value = 1,
-				upgrade = "regen_all_armor",
-				category = "temporary",
-			},
-		}
-	end
-)
+			upgrade = "melee_damage_reduction",
+			value = 1,
+		},
+	}
+end)
 
-BetterRebalanceTable:PostHook(
-	UpgradesTweakData,
-	"_init_pd2_values",
-	function(self)
-		-- Add amount of time bulletstorm should last
-		self.values.player.hitman_kill_bulletstorm = { 5 }
-		-- Set values to hitman armor regen
-		self.values.temporary.regen_all_armor = { { 1.5, 15 } }
-		-- Yakuza zerk state
-		self.values.player.passive_always_zerk = { true }
-		-- Hitman armor steps
-		self.values.player.hitman_armor_increase = { 1, 1.1, 1.35 }
-		-- Infiltrator HP upgrades
-		self.values.player.passive_infiltrator_health_multiplier =
-			{ 1.2, 1.4, 1.6 }
-		-- Crook BV upgrades
-		self.values.player.level_2_crook_armor_addend = { 1.5 }
-		self.values.player.level_3_crook_armor_addend = { 1.5 }
-		self.values.player.level_4_crook_armor_addend = { 1.5 }
-		-- Ex-president dodge chance
-		self.values.player.expres_dodge_chance = { 0.05 }
-		-- Burglar concealment upgrade
-		self.values.player.passive_burglar_concealment_addend = { 2.5 }
-		-- Buff ex-pres ICTV health storage
-		self.values.player.body_armor.skill_max_health_store =
-			{ 14, 13.5, 12.5, 12, 10.5, 9.5, 8 }
-		-- Gambler health pool values
-		self.values.player.gambler_kill_to_health_buffer = { 0.2 }
-		-- Gambler ammo pool upgrades
-		self.values.player.gambler_kill_to_ammo_team = { 0.1 }
-		-- Gambler hp upgrade values
-		self.values.player.gambler_passive_health_multiplier = { 1.2, 1.4 }
-		-- Leech swap speed value
-		self.values.weapon.copr_passive_swap_speed = { 1.4 }
-		-- Leech cooldown buff
-		self.copr_ability_cooldown = 30
-		-- Leech teammate heal
-		self.values.player.copr_teammate_heal = { 0.05, 0.2 }
-		-- Biker HP
-		self.values.player.biker_passive_health_multiplier = { 1.1 }
-		-- Biker armor
-		self.values.player.biker_passive_armor_multiplier = { 1.1 }
-		-- Biker cooldown upgrade
-		self.values.player.passive_wild_cooldown = { 1 }
-		-- Copycat burglar dodge value
-		self.values.player.mrwi_burglar_dodge_chance = { 0.15 }
-		-- Copycat health nerf to 15% per card
-		local health_boost = 0.15
-		self.values.player.mrwi_health_multiplier = { 1.15, 1.3, 1.45, 1.6 }
-		-- Trigger happy run and gun
-		self.values.pistol.hip_run_and_shoot = { true }
-		-- Trigger happy pierce armor
-		self.values.pistol.pierce_enemy_armor = { true }
-	end
-)
+BetterRebalanceTable:PostHook(UpgradesTweakData, "_temporary_definitions", function(self)
+	-- Hitman full armor regen upgrade
+	self.definitions.temporary_regen_all_armor_1 = {
+		name_id = "menu_temporary_regen_all_armor_1",
+		category = "temporary",
+		upgrade = {
+			value = 1,
+			upgrade = "regen_all_armor",
+			category = "temporary",
+		},
+	}
+end)
+
+BetterRebalanceTable:PostHook(UpgradesTweakData, "_init_pd2_values", function(self)
+	-- Add amount of time bulletstorm should last
+	self.values.player.hitman_kill_bulletstorm = { 5 }
+	-- Set values to hitman armor regen
+	self.values.temporary.regen_all_armor = { { 1.5, 15 } }
+	-- Yakuza zerk state
+	self.values.player.passive_always_zerk = { true }
+	-- Hitman armor steps
+	self.values.player.hitman_armor_increase = { 1, 1.1, 1.35 }
+	-- Infiltrator HP upgrades
+	self.values.player.passive_infiltrator_health_multiplier = { 1.2, 1.4, 1.6 }
+	-- Crook BV upgrades
+	self.values.player.level_2_crook_armor_addend = { 1.5 }
+	self.values.player.level_3_crook_armor_addend = { 1.5 }
+	self.values.player.level_4_crook_armor_addend = { 1.5 }
+	-- Ex-president dodge chance
+	self.values.player.expres_dodge_chance = { 0.05 }
+	-- Burglar concealment upgrade
+	self.values.player.passive_burglar_concealment_addend = { 2.5 }
+	-- Buff ex-pres ICTV health storage
+	self.values.player.body_armor.skill_max_health_store = { 14, 13.5, 12.5, 12, 10.5, 9.5, 8 }
+	-- Gambler health pool values
+	self.values.player.gambler_kill_to_health_buffer = { 0.2 }
+	-- Gambler ammo pool upgrades
+	self.values.player.gambler_kill_to_ammo_team = { 0.1 }
+	-- Gambler hp upgrade values
+	self.values.player.gambler_passive_health_multiplier = { 1.2, 1.4 }
+	-- Leech swap speed value
+	self.values.weapon.copr_passive_swap_speed = { 1.4 }
+	-- Leech cooldown buff
+	self.copr_ability_cooldown = 30
+	-- Leech teammate heal
+	self.values.player.copr_teammate_heal = { 0.05, 0.2 }
+	-- Biker HP
+	self.values.player.biker_passive_health_multiplier = { 1.1 }
+	-- Biker armor
+	self.values.player.biker_passive_armor_multiplier = { 1.1 }
+	-- Biker cooldown upgrade
+	self.values.player.passive_wild_cooldown = { 1 }
+	-- Copycat burglar dodge value
+	self.values.player.mrwi_burglar_dodge_chance = { 0.15 }
+	-- Copycat health nerf to 15% per card
+	local health_boost = 0.15
+	self.values.player.mrwi_health_multiplier = { 1.15, 1.3, 1.45, 1.6 }
+	-- Trigger happy run and gun
+	self.values.pistol.hip_run_and_shoot = { true }
+	-- Trigger happy pierce armor
+	self.values.pistol.pierce_enemy_armor = { true }
+	-- Infiltrator melee hit dr
+	self.values.temporary.melee_damage_reduction = { { 0.35, 10, 2 } }
+end)
 
 -- Modify some copycat stuff
 local old_mrwi_options = UpgradesTweakData.mrwi_deck9_options

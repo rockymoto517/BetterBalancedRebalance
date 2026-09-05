@@ -94,8 +94,7 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 		"temporary_mrwi_health_invulnerable_1",
 	}
 	-- Infiltrator
-	self.specializations[8][3].upgrades =
-		{ "player_passive_infiltrator_health_multiplier_1" }
+	self.specializations[8][3].upgrades = { "player_passive_infiltrator_health_multiplier_1" }
 	self.specializations[8][5].upgrades = {
 		"player_passive_infiltrator_health_multiplier_2",
 		"player_passive_armor_multiplier_1",
@@ -103,6 +102,11 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	}
 	self.specializations[8][7].upgrades = {
 		"player_passive_infiltrator_health_multiplier_3",
+	}
+	self.specializations[8][9].upgrades = {
+		"player_passive_loot_drop_multiplier",
+		"player_melee_life_leech",
+		"player_melee_damage_reduction",
 	}
 	-- Crook
 	self.specializations[6][9].upgrades = {
@@ -120,8 +124,7 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 	}
 	-- Hacker
 	self.specializations[21][3].upgrades = { "player_passive_dodge_chance_1" }
-	self.specializations[21][5].upgrades =
-		{ "player_pocket_ecm_heal_on_kill_1" }
+	self.specializations[21][5].upgrades = { "player_pocket_ecm_heal_on_kill_1" }
 	self.specializations[21][9].upgrades = {
 		"player_passive_loot_drop_multiplier",
 		"player_passive_dodge_chance_2",
@@ -133,21 +136,16 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 		"player_passive_burglar_concealment_addend",
 	}
 	-- Gambler
-	self.specializations[10][1].upgrades =
-		{ "player_gambler_kill_to_health_buffer" }
-	self.specializations[10][3].upgrades =
-		{ "player_gambler_kill_to_ammo_team" }
-	self.specializations[10][5].upgrades =
-		{ "player_gambler_passive_health_multiplier_1" }
-	self.specializations[10][7].upgrades =
-		{ "player_gambler_passive_health_multiplier_2" }
+	self.specializations[10][1].upgrades = { "player_gambler_kill_to_health_buffer" }
+	self.specializations[10][3].upgrades = { "player_gambler_kill_to_ammo_team" }
+	self.specializations[10][5].upgrades = { "player_gambler_passive_health_multiplier_1" }
+	self.specializations[10][7].upgrades = { "player_gambler_passive_health_multiplier_2" }
 	self.specializations[10][9].upgrades = {
 		"player_passive_loot_drop_multiplier",
 		"player_killshot_close_panic_chance",
 	}
 	-- Leech
-	self.specializations[22][3].upgrades =
-		{ "player_copr_out_of_health_move_slow_1" }
+	self.specializations[22][3].upgrades = { "player_copr_out_of_health_move_slow_1" }
 	self.specializations[22][7].upgrades = { "player_copr_passive_swap_speed" }
 	self.specializations[22][9].upgrades = {
 		"player_copr_static_damage_ratio_2",
@@ -195,6 +193,5 @@ BetterRebalanceTable:PostHook(SkillTreeTweakData, "init", function(self)
 		"player_counter_strike_melee",
 		"player_counter_strike_spooc",
 	}
-	self.skills.drop_soap[2].upgrades =
-		{ "melee_stacking_hit_damage_multiplier_1" } --Counter Strike aced to socio
+	self.skills.drop_soap[2].upgrades = { "melee_stacking_hit_damage_multiplier_1" } --Counter Strike aced to socio
 end)
