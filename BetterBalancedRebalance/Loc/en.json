@@ -17,6 +17,7 @@
     "menu_deck8_1_desc" : "You gain ##$multiperk## more health.",
     "menu_deck8_5_desc" : "You gain ##$multiperk## more health.\n\nYou gain ##$multiperk2## more armor.",
     "menu_deck8_3_desc" : "You gain ##$multiperk## more health.\n\nYour melee damage timer is extended by an additional ##$multiperk2## seconds.",
+	"menu_deck8_9_desc" : "You can heal ##20%## of your health and gain a ##65%## damage resistance when you strike an enemy. Damage resistance lasts for 2 seconds and both healing and DR benefits are tied to a 10 second cooldown",
     "menu_deck10_1" : "Flush",
     "menu_deck10_1_desc" : "You gain the Pot ability.\n\nThe Pot has a maximum limit of ##$multiperk## and can be filled with kills and ammo pickups.\n\nOnce filled, you will heal ##$multiperk2## of your health.\n\nWhen the pot is filled, a sound cue will play.",
     "menu_deck10_3" : "Horse",
@@ -29,7 +30,7 @@
     "menu_deck10_9_desc" : "Killing an enemy at medium range has a ##$multiperk## chance to spread panic among your enemies.\n\nPanic will make enemies go into short bursts of uncontrollable fear.\n\nThis cannot occur more than once every ##$multiperk2## second.\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##.",
     "menu_deck12_1_desc" : "The lower your health, the higher your armor recovery rate. When your health is below ##$multiperk##, you armor recovery rate will increase up to ##$multiperk2##.\n\nAll berserker state effects in this perk deck will start at ##$multiperk3## instead of ##$multiperk4##.",
     "menu_deck12_7_desc" : "The lower your health, the more armor recovery rate you have. When your health is below ##$multiperk## you will gain up to an additional ##$multiperk2## armor recovery rate.\n\nWeapon swap speed is increased by ##$multiperk3##.",
-    "menu_deck12_9_desc" : "Your health is automatically set to ##$multiperk## if the frenzy skill is equipped, allowing you to get the full benefit of this deck's abilities.\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##.",
+    "menu_deck12_9_desc" : "The deck's benefits are no longer tied to your health and always stays active. \n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##.",
     "menu_deck13_9_desc" : "Killing an enemy speeds up your armor recovery time depending on how much armor you have. The more armor, the less recovery speed gained per kill.\nArmor recovery speed is reset whenever your armor recovers.\n\nYour chance to dodge is increased by ##10%##.\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##.",
     "menu_deck16_3_desc" : "You gain ##10%## more health.\n\nYou can now regenerate throwables by picking up ammo boxes. This ability does not stack with fully loaded aced."
     "menu_deck16_5_desc" : "You gain ##10%## more health.\n\nWhen your armor drops, you regenerate more health."
@@ -86,6 +87,7 @@
 	"menu_deck8_1_short" : "You gain ##$multiperk## more health.",
 	"menu_deck8_5_short" : "You gain ##$multiperk## more health. You gain ##$multiperk2## more armor.",
 	"menu_deck8_3_short" : "You gain ##$multiperk## more health.Your melee damage timer is extended by an additional ##$multiperk2## seconds.",
+	"menu_deck8_9_short" : "You can heal ##20%## of your health and gain a ##65%## damage resistance when you strike an enemy. Damage resistance lasts for 2 seconds and both healing and DR benefits are tied to a 10 second cooldown",
 	"menu_st_spec_9_desc" : "Sociopaths are criminals that are used as hired muscle by larger organizations. Lacking the basics of what it means to be a human, Sociopaths gives off an uneasy feeling to people nearby.\n\nThe Sociopath is an armor tank/gate hybrid with a higher preference for tanking. Packed with all sorts of abilities which only really kicks in during close range combat compared to more consistent armor decks.",
 	"menu_deck9_1_short" : "When surrounded by three enemies or more, receive ##12%## less damage. Consecutive melee hits deal ##10## times damage as long as it is within ##1## second.",
 	"menu_deck9_5_short" : "Killing an enemy with a melee weapon regenerates ##10%## health. ##8%## damage reduction if close to an enemy.",
