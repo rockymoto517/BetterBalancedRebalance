@@ -48,6 +48,7 @@ local range_map = {
 	boot = 2500,
 	huntsman = 2500,
 	b682 = 2500,
+	bleckert = 2500,
 }
 
 local old_dot_data = DOTBulletBase._dot_data_by_weapon

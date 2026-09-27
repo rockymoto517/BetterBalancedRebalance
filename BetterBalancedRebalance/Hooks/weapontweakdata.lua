@@ -139,6 +139,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.vityaz.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
 	self.pm9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
 	self.fmg9.damage_falloff = FALLOFF_TEMPLATE.SMG_BBR_LOW
+	self.speen.AMMO_PICKUP = { 1.05, 2.2 }
 	-- secondary pistols
 	self.sparrow.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
 	self.b92fs.damage_falloff = FALLOFF_TEMPLATE.PISTOL_BBR_HIGH
@@ -250,6 +251,8 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.x_breech.can_shoot_through_wall = true
 	self.x_breech.has_description = true
 	self.x_breech.armor_piercing_chance = 1
+	self.x_pmm.stats.concealment = 28
+	self.x_pmm.damage_falloff = FALLOFF_TEMPLATE.AKI_PISTOL_BBR_HIGH
 	-- lmg stuff
 	self.m60.damage_falloff = FALLOFF_TEMPLATE.LMG_BBR_HIGH
 	self.hk51b.AMMO_MAX = 120
@@ -306,6 +309,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.coach.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_VERYHIGH
 	self.ultima.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_HIGH
 	self.ultima.stats.damage = 90
+	self.bleckert.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_VERYHIGH
 	self.x_rota.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
 	self.x_basset.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_BBR_LOW
 	self.x_sko12.damage_falloff = FALLOFF_TEMPLATE.AKI_SHOTGUN_BBR_LOW
@@ -335,6 +339,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.striker.rays = 10
 	self.ultima.rays = 10
 	self.supernova.rays = 12
+	self.bleckert.rays = 12
 	-- little friend
 	self.contraband.stats.damage = 120
 	self.contraband.stats.recoil = 5

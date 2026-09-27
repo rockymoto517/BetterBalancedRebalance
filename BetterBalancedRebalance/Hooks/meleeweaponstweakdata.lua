@@ -994,5 +994,16 @@ BetterRebalanceTable:PostHook(BlackMarketTweakData, "_init_melee_weapons", funct
 	self.melee_weapons.bonk2.expire_t = 0.6
 	self.melee_weapons.bonk2.melee_damage_delay = 0.1
 	
+	self.melee_weapons.order.stats.min_damage = 7 
+	self.melee_weapons.order.stats.max_damage = 45 
+	self.melee_weapons.order.stats.min_damage_effect = 1 
+	self.melee_weapons.order.stats.max_damage_effect = 1 
+	self.melee_weapons.order.stats.charge_time = 4 
+	self.melee_weapons.order.stats.range = 250 
+	self.melee_weapons.order.stats.concealment = 30
+	self.melee_weapons.order.repeat_expire_t = 0.8
+	self.melee_weapons.order.expire_t = 0.6
+	self.melee_weapons.order.melee_damage_delay = 0.1
+	
 end )
 	
