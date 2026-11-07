@@ -380,4 +380,7 @@ BetterRebalanceTable:PostHook(WeaponTweakData, "init", function(self)
 	self.ray.stats_modifiers = { damage = 10 }
 	self.ray.upgrade_blocks = nil
 	self.ray.AMMO_PICKUP = { 0.15, 0.2 }
+	-- Piglet
+	self.m32.stats.reload = 22
+	self.m32.AMMO_PICKUP = { 0.5, 0.7 }
 end)
