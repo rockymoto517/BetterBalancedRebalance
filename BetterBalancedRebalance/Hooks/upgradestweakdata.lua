@@ -312,8 +312,8 @@ end)
 
 -- Modify some copycat stuff
 local old_mrwi_options = UpgradesTweakData.mrwi_deck9_options
-function UpgradesTweakData.mrwi_deck9_options()
-	local options = old_mrwi_options()
+function UpgradesTweakData:mrwi_deck9_options()
+	local options = old_mrwi_options(self)
 	options[7].upgrades = {
 		"player_mrwi_burglar_dodge_chance",
 		"player_stand_still_crouch_camouflage_bonus_1",
